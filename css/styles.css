@@ -26,6 +26,10 @@
   --timing-fuction: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* reset styles */
 .link {
   text-decoration: none;
@@ -137,6 +141,12 @@ body {
 
 /* HEADER */
 .header {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; */
+
   border-bottom: 1px solid var(--border-head-cl);
 }
 
@@ -227,6 +237,8 @@ body {
   color: var(--descr-txt-cl);
   padding-top: 32px;
   padding-bottom: 31px;
+
+  transition: color 250ms var(--timing-fuction);
 }
 
 .contacts-mail:hover,
@@ -243,6 +255,8 @@ body {
   color: var(--descr-txt-cl);
   padding-top: 32px;
   padding-bottom: 31px;
+
+  transition: color 250ms var(--timing-fuction);
 }
 
 .contacts-phone:hover,
@@ -293,6 +307,8 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
+
+  transition: background-color 250ms var(--timing-fuction);
 }
 
 .hero-btn:hover,
@@ -430,6 +446,8 @@ body {
   height: 44px;
   color: var(--icon-bg-cl);
   border-radius: 50%;
+
+  transition: color 250ms var(--timing-fuction), background-color 250ms var(--timing-fuction);
 }
 
 .socials-link:hover,
@@ -459,6 +477,8 @@ body {
   border: 1px solid var(--icon-bg-cl);
   border-radius: 4px;
   color: var(--icon-bg-cl);
+
+  transition: color 250ms var(--timing-fuction), border-color 250ms var(--timing-fuction);
 }
 
 .clients-icon {
@@ -491,6 +511,8 @@ body {
 .footer-link {
   line-height: calc(24 / 14);
   color: var(--white-txt-cl);
+
+  transition: color 250ms var(--timing-fuction);
 }
 
 .footer-item {
@@ -505,6 +527,8 @@ body {
 .footer-phone {
   line-height: calc(24 / 14);
   color: var(--foot-txt-cl);
+
+  transition: color 250ms var(--timing-fuction);
 }
 
 .foot:hover,
@@ -536,6 +560,8 @@ body {
   fill: var(--white-bg-cl);
   background-color: var(--dark-icon-bg-cl);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-fuction);
 }
 
 .switch-link:hover,
@@ -560,6 +586,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   border: none;
+
+  transition: background-color 250ms var(--timing-fuction), color 250ms var(--timing-fuction),
+    box-shadow 250ms var(--timing-fuction);
 }
 
 .filters-btn:hover,
@@ -610,6 +639,8 @@ body {
 
 .product-link {
   display: block;
+
+  transition: box-shadow 250ms var(--timing-fuction);
 }
 .product-link:hover,
 .product-link:focus {
@@ -623,7 +654,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   height: 100%;
 
