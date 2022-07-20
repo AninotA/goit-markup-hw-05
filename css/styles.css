@@ -20,6 +20,9 @@
   --border-card-cl: #eeeeee;
   --icon-bg-cl: #afb1b8;
   --dark-icon-bg-cl: rgba(255, 255, 255, 0.1);
+  --dark-dec-bg-cl: rgba(47, 48, 58, 0.8);
+
+  --timing-fuction: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* reset styles */
@@ -370,7 +373,7 @@ body {
   left: 0;
   bottom: 0;  
   background-color: var(--dark-dec-bg-cl);
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
