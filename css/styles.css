@@ -161,8 +161,21 @@ body {
   color: var(--accent-txt-cl);
 }
 
-.header-link-current {
+.current {
   color: var(--accent-txt-cl);
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-bg-cl);
 }
 
 .header-list {
@@ -322,6 +335,7 @@ body {
 
 .info {
   padding-top: 0;
+
 }
 .title {
   font-weight: 700;
@@ -336,6 +350,31 @@ body {
   display: flex;
   gap: 30px;
   padding-top: 0;
+}
+
+.info-item {
+  position: relative;
+}
+
+.info-subtitle {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+
+  content: "";
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+  background-color: var(--dark-dec-bg-cl);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .team {
