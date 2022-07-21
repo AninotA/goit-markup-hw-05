@@ -617,6 +617,7 @@ body {
 
 .product-img {
   position: relative;
+  overflow: hidden;
 }
 
 .product-overlay {
@@ -628,6 +629,13 @@ body {
   width: 100%;
   height: 100%;
   background-color: var(--overlay-bg-cl);
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-fuction);
+}
+
+.product-link:hover .product-overlay {
+  transform: translateY(0);
 }
 
 .product-text {
@@ -635,6 +643,8 @@ body {
   font-size: 18px;
   line-height: calc(28 / 18);
   color: var(--white-txt-cl);
+  
+  padding: 63px 24px;
 }
 
 .product-name {
@@ -642,7 +652,7 @@ body {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  border: 1px solid var(--border-card-cl);
+  border: 1px solid var(--border-card-cl);  
 }
 
 .product-title {
@@ -661,7 +671,7 @@ body {
 }
 
 .product-link {
-  display: block;  
+  display: block;
 
   transition: box-shadow 250ms var(--timing-fuction);
 }
