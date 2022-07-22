@@ -378,14 +378,14 @@ body {
   position: relative;
 }
 
-.info-subtitle {
+.info-text {
   font-weight: 700;
+  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-txt-cl);
 
-  content: '';
   height: 70px;
   width: 100%;
   position: absolute;
@@ -637,7 +637,8 @@ body {
   transition: transform 250ms var(--timing-fuction), opacity 250ms var(--timing-fuction);
 }
 
-.product-link:hover .product-overlay {
+.product-link:hover .product-overlay,
+.product-link:focus .product-overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -697,7 +698,8 @@ body {
   background-color: var(--modal-bg-cl);
 
   opacity: 1;
-  transition: opacity 250ms var(--timing-fuction);
+  visibility: visible;
+  transition: opacity 250ms var(--timing-fuction), visibility 250ms var(--timing-fuction);
 }
 
 .backdrop.is-hidden {
